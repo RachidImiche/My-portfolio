@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Hero Section</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================Hero section================================ -->
+
+
+<section class="hero" id="hero">
+  <!-- Left Side -->
+  <div class="hero-left">
+    <div class="content-wrapper">
+      <p class="greeting">Hi, I am</p>
+      <h1 class="subheading">
+        Rachid Imiche<br /><span>Software Engineering Student</span>
+      </h1>
+      <div class="social-icons">
+        <a href="https://x.com/rachid46959275" aria-label="X"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/RachidImiche" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rachid-imiche/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side -->
+  <div class="hero-right">
+    <!-- Headshot Background -->
+    <div class="headshot-background"></div>
+    <div class="headshot-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <ul>
+        <li><a href="#contact" class="contact-button">CONTACT ME</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Headshot Content Area -->
+    <div class="hero-right-content"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <ul class="mobile-links">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <ul><li><a href="#contact" class="mobile-contact">CONTACT ME</a></li></ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================About me section================================ -->
+
+    
+    <section id="about"" class="about-section">
+     
+      <div class="bg-element bg-element-1">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="bg-element bg-element-2">
+        <i class="fas fa-cogs"></i>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <div class="outlined-title">About Me</div>
+          <p class="section-description">
+            I'm a Software and Application Development Engineering student at ENSA Agadir right now.  I'm really interested in problem-solving, programming, and new technologies.  I'm driven to participate in creative projects and always willing to take on new challenges, all the while honing my practical abilities.
+          </p>
+        </div>
+
+        <div class="explore-container">
+          <div class="line"></div>
+          <button class="explore-button">Explore</button>
+          <div class="line"></div>
+        </div>
+
+        <div class="divider">
+          <div class="divider-line"></div>
+          <div class="divider-line"></div>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="features">
+          <div class="feature-row">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <h3 class="feature-title">Design</h3>
+              <p class="feature-description">
+                Designing intuitive and structured user interfaces using HTML and CSS. I pay close attention to layout, readability, and user experience. My web projects show a strong focus on content organization and visual clarity, following modern UX/UI practices.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3 class="feature-title">Development</h3>
+              <p class="feature-description">
+                Building responsive web applications using JavaScript, HTML, and CSS. I’ve developed a content aggregation platform and other projects that showcase my skills in frontend development and efficient, clean coding.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-card centered">
+              <div class="feature-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3 class="feature-title">Maintenance</h3>
+              <p class="feature-description">
+                Providing ongoing support and optimization for existing
+                applications.Ensuring the performance and functionality of applications through consistent  improvements, and systems remain, efficient, and
+                up-to-date.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-line"></div>
+        <div class="divider-line"></div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =========================Hero section================================ -->  
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="bg-pattern"></div>
+      <div class="code-bg"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <div class="outlined-title">Skills</div>
+        </div>
+
+        <!-- Using Now Skills -->
+        <div class="skills-category using-now">
+          <h3 class="category-title">USING NOW:</h3>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span class="skill-label">HTML5</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span class="skill-label">CSS3</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <span class="skill-label">Java</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <span class="skill-label">JavaScript</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span class="skill-label">Python</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span class="skill-label">MySQL</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <span class="skill-label">Git</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <span class="skill-label">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Learning Skills -->
+        <div class="skills-category learning">
+          <h3 class="category-title">LEARNING:</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <span class="skill-label">NodeJS</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="images/tailwind_css.png" width="50px" />
+              </div>
+              <span class="skill-label">TailwindCSS</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <span class="skill-label">MongoDB</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <span class="skill-label">TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="skills-category other-skills">
+          <h3 class="category-title">OTHER SKILLS:</h3>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon other">
+                <img src="images/english-icon.png" width="100%" />
+              </div>
+              <span class="skill-label">English</span>
+              <span class="skill-level">C1</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon other">
+                <img src="images/french-icon.png" alt="" />
+              </div>
+              <span class="skill-label">French</span>
+              <span class="skill-level">B1</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon other">
+                <img src="images/arabic-icon.png" alt="" />
+              </div>
+              <span class="skill-label">Arabic</span>
+              <span class="skill-level">Fluent</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <span class="text-icon">C</span>
+              </div>
+              <span class="skill-label">C</span>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <span class="text-icon">C++</span>
+              </div>
+              <span class="skill-label">C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+<!-- =========================Potfolio section================================ -->
+
+    
+
+    <section id="portfolio" class="portfolio-section">
+      
+      <div class="mountain-bg">
+        <div class="mountain-overlay"></div>
+      </div>
+
+      <!-- Portfolio Title -->
+      <div class="section-header">
+        <h1 class="outlined-title">Portfolio</h1>
+      </div>
+
+      <!-- Filter Bar -->
+<div class="filter-bar">
+
+    <button class="mobile-filter-toggle" id="mobile-filter-toggle">
+      <span>Filter by</span>
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    
+    
+    <div class="filters" id="filters-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="coded">Coded</button>
+      <button class="filter-btn" data-filter="designed">Designed</button>
+    </div>
+  </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item"  data-category="coded">
+          <div
+            class="portfolio-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1652451764453-eff80b50f736?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29yZGxlfGVufDB8fDB8fHww');
+            "
+          ></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Coded</span>
+            <h3 class="portfolio-name">Arabic Wordle</h3>
+            <p class="portfolio-desc">
+              An Arabic version of the popular Wordle game with Arabic language support.
+
+
+            </p>
+            <a href="https://rachidimiche.github.io/arabic-wordle/" class="portfolio-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-item" data-category="coded">
+          <div
+            class="portfolio-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1558174685-430919a96c8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFydGljbGV8ZW58MHx8MHx8fDA%3D');
+            "
+          ></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Coded</span>
+            <h3 class="portfolio-name">Articles platform</h3>
+            <p class="portfolio-desc">
+              A website that brings together relevant articles from various fields (tech, sports, science, etc.) on a single platform.
+            </p>
+            <a href="https://ar-93.github.io/RInfo/" class="portfolio-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-item" data-category="coded">
+          <div
+            class="portfolio-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+            "
+          ></div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Coded</span>
+            <h3 class="portfolio-name">My portfolio</h3>
+            <p class="portfolio-desc">
+              Converting a website design into a fully responsive, mobile-friendly site using HTML, CSS, and Vanilla JavaScript.
+            </p>
+            <a href="#hero" class="portfolio-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <!-- More Projects -->
+      <p class="more-projects">And many more to come!</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =========================Contact section================================ -->
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="outlined-title">Contact</div>
+        </div>
+
+        <p class="contact-description">
+          I'm always excited to take on new challenges and work with creative
+          people. If you have an idea, a project, or even just a question, let's
+          connect and make something great.
+        </p>
+        <div class="divider">
+          <div class="divider-line"></div>
+          <div class="divider-line"></div>
+          <div class="divider-line"></div>
+        </div>
+
+        <form  class="contact-form" id="contactForm">
+          <div class="form-group">
+            
+            <input
+              type="text"
+              id="name"
+              class="form-input"
+              placeholder="Enter your name*"
+              required/>
+          </div>
+
+          <div class="form-group">
+            
+            <input type="email" id="email" class="form-input" placeholder="Enter your email*" required />
+          </div>
+
+          <div class="form-group">
+            
+            <input
+              type="tel"
+              id="phone"
+              class="form-input"
+              placeholder="Phone number"
+            />
+          </div>
+
+          <div class="form-group">
+            
+            <textarea
+              id="message"
+              class="form-textarea"
+              placeholder="Your message*"
+              required
+            ></textarea>
+          </div>
+
+          <div class="submit-container">
+            <button type="submit"  class="submit-button" id="submitBtn">Submit</button>
+          </div>
+            <div class="status-message" id="statusMessage"></div>
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =========================Foooter================================ -->
+     <footer class="footer">
+        <!-- Back to top link -->
+        <a href="#" class="back-to-top">Back to top</a>
+        
+        
+        <div class="social-icons-footer">
+            <a href="https://www.facebook.com/Rachid.Imiche55/" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rachid-imiche/" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/rachid_.ih/" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:Rachid.Imiche@edu.uiz.ac.ma" aria-label="Email">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+        
+      
+        <p class="copyright">@[2025] <span>Rachid Imiche</span> | All Rights Reserved.</p>
+    </footer>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
