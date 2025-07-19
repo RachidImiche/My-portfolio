@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+# Run this workflow every time a change is pushed to the 'main' branch
+on:
+  push:
+    branches: [ main ]
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository
+        uses: actions/checkout@v4
+
+      - name: Create config.js from secrets
+        run: |
+          echo "const emailjs_keys = {" > config.js
+          echo "  publicKey: \"${{ secrets.EMAILJS_PUBLIC_KEY }}\"," >> config.js
+          echo "  serviceID: \"${{ secrets.EMAILJS_SERVICE_ID }}\"," >> config.js
+          echo "  templateID: \"${{ secrets.EMAILJS_TEMPLATE_ID }}\"" >> config.js
+          echo "};" >> config.js
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
