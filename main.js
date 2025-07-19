@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //  EmailJS for my contacts
-emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+emailjs.init(emailjs_keys.publicKey);
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
@@ -283,11 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Send email using EmailJS
     emailjs
-      .send(
-        "EMAILJS_CONFIG.SERVICE_ID",
-        "EMAILJS_CONFIG.TEMPLATE_ID",
-        templateParams
-      )
+      .send(emailjs_keys.serviceID, emailjs_keys.templateID, templateParams)
       .then(
         function (response) {
           statusMessage.textContent = "Message sent successfully!";
