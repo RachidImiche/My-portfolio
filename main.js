@@ -275,19 +275,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Prepare email parameters
     const templateParams = {
       to_email: "rachid.imiche@edu.uiz.ac.ma",
-      from_name: form.name.value,
-      from_email: form.email.value,
-      phone: form.phone.value,
-      message: form.message.value,
-      "g-recaptcha-response": grecaptcha.getResponse()
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+      "g-recaptcha-response": grecaptcha.getResponse(),
     };
     // Check if reCAPTCHA is completed
-if (!templateParams["g-recaptcha-response"]) {
-  statusMessage.textContent = "Please complete the reCAPTCHA.";
-  statusMessage.classList.add("error");
-  submitBtn.disabled = false;
-  return;
-}
+    if (!templateParams["g-recaptcha-response"]) {
+      statusMessage.textContent = "Please complete the reCAPTCHA.";
+      statusMessage.classList.add("error");
+      submitBtn.disabled = false;
+      return;
+    }
 
     // Send email using EmailJS
     emailjs
