@@ -279,7 +279,15 @@ document.addEventListener("DOMContentLoaded", function () {
       from_email: form.email.value,
       phone: form.phone.value,
       message: form.message.value,
+      "g-recaptcha-response": grecaptcha.getResponse()
     };
+    // Check if reCAPTCHA is completed
+if (!templateParams["g-recaptcha-response"]) {
+  statusMessage.textContent = "Please complete the reCAPTCHA.";
+  statusMessage.classList.add("error");
+  submitBtn.disabled = false;
+  return;
+}
 
     // Send email using EmailJS
     emailjs
